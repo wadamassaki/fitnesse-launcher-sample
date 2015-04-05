@@ -1,0 +1,20 @@
+
+!*> '''Variables Defined'''
+!define TEST_SYSTEM {slim}
+*!
+
+!*> '''Classpath'''
+${maven.classpath}
+*!
+
+!*> setup
+|import|
+|fitnesse.wada|
+
+*!
+
+!|CalculatorFixture |
+|operand 1|operand 2|calc quotient?|calc product?|
+| 1. | 2.| 0.5 | 2.0|
+| 4. | 2.| 2.0 | 8.0|
+| 8. | 2.| 4.0 | 16.0|

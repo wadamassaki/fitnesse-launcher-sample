@@ -1,0 +1,5 @@
+!1 Welcome to Front Page !
+
+!2 [[''Sample Test Suites ''][SampleTestSuites]]
+
+!note Release ${FITNESSE_VERSION}
