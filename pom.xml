@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.fitnesse</groupId>
             <artifactId>fitnesse</artifactId>
-            <version>20140201</version>
+            <version>20150226</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -85,41 +85,6 @@
                         <scope>test</scope>
                         <scope>runtime</scope>
                     </useProjectDependencies>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-                    <reportPlugins>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-jxr-plugin</artifactId>
-                            <version>2.3</version>
-                            <configuration>
-                                <linkJavadoc>true</linkJavadoc>
-                            </configuration>
-                        </plugin>
-                        <plugin>
-                            <groupId>org.apache.maven.plugins</groupId>
-                            <artifactId>maven-javadoc-plugin</artifactId>
-                            <version>2.9</version>
-                            <configuration>
-                                <quiet>true</quiet>
-                                <use>false</use>
-                                <show>package</show>
-                                <stylesheetfile>${project.parent.basedir}/src/site/javadoc/stylesheet.css
-                                </stylesheetfile>
-                                <includeDependencySources>false</includeDependencySources>
-                                <name>Example Java Project JavaDocs</name>
-                                <description>JavaDoc API documentation for FitNesse Launcher Example Java Project
-                                </description>
-                                <links>
-                                    <link>http://java.sun.com/javase/6/docs/api/</link>
-                                </links>
-                            </configuration>
-                        </plugin>
-                    </reportPlugins>
                 </configuration>
             </plugin>
         </plugins>
