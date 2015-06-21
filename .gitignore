@@ -4,3 +4,4 @@
 ## IntelliJ
 *.iml
 .idea/
+target/
